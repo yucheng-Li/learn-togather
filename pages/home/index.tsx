@@ -9,6 +9,7 @@ import {
 import lf from "localforage"
 import SDK from "weavedb-sdk"
 import { isNil, map } from "ramda"
+import ActivityPage from "@/pages/activity"
 import TranslationPage from '@/pages/translation'
 import WordListPage from "@/pages/word-list";
 import WalletNavBar from "@/component/wallet";
@@ -136,6 +137,7 @@ export default function HomePage() {
                     <Box>
                         <Tab>翻译</Tab>
                         <Tab>单词列表</Tab>
+                        <Tab>活动</Tab>
                     </Box>
                     <WalletNavBar />
                 </TabList>
@@ -145,6 +147,9 @@ export default function HomePage() {
                     </TabPanel>
                     <TabPanel>
                         <WordListPage db={db} user={user} />
+                    </TabPanel>
+                    <TabPanel>
+                        <ActivityPage />
                     </TabPanel>
                 </TabPanels>
             </Tabs>

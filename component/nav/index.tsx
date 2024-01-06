@@ -17,9 +17,9 @@ export default function Nav() {
                 <Box>
                     <a href="/word-list">单词列表</a>
                     <a href="/translation">翻译</a>
+                    <a href="/activity">活动</a>
                 </Box>
-                <Box style={{
-                }}>
+                <Box style={{}}>
                     <WalletNavBar />
                 </Box>
             </Box>

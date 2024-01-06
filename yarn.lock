@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@adraffy/ens-normalize@^1.8.8":
+  "integrity" "sha512-nA9XHtlAkYfJxY7bce8DcN7eKxWWCWkU+1GR9d+U6MbNpfwQp8TI7vqOsBsMcHoT4mBu2kypKoSKnghEzOOq5Q=="
+  "resolved" "https://registry.npmmirror.com/@adraffy/ens-normalize/-/ens-normalize-1.10.0.tgz"
+  "version" "1.10.0"
+
 "@ant-design/colors@^7.0.0":
   "integrity" "sha512-iVm/9PfGCbC0dSMBrz7oiEXZaaGH7ceU40OJEfKmyuzR9R5CRimJYPlRiFtMQGQcbNMea/ePcoIebi4ASGYXtg=="
   "resolved" "https://registry.npmmirror.com/@ant-design/colors/-/colors-7.0.0.tgz"
@@ -1077,6 +1082,11 @@
     "crc-32" "^1.2.0"
     "ethereumjs-util" "^7.1.5"
 
+"@ethereumjs/rlp@^4.0.1":
+  "integrity" "sha512-tqsQiBQDQdmPWE1xkkBq4rlSW5QZpLOUJ5RJh2/9fug+q9tnUhuZoVLk7s0scUIKTOzEtR72DFBXI4WiZcMpvw=="
+  "resolved" "https://registry.npmmirror.com/@ethereumjs/rlp/-/rlp-4.0.1.tgz"
+  "version" "4.0.1"
+
 "@ethereumjs/tx@3.5.2":
   "integrity" "sha512-gQDNJWKrSDGu2w7w0PzVXVBNMzb7wwdDOmOqczmhNjqFxFuIbhVJDwiGEnxFNC2/b8ifcZzY7MLcluizohRzNw=="
   "resolved" "https://registry.npmmirror.com/@ethereumjs/tx/-/tx-3.5.2.tgz"
@@ -1582,7 +1592,21 @@
   dependencies:
     "@noble/hashes" "1.3.0"
 
-"@noble/hashes@^1.1.5":
+"@noble/curves@~1.1.0":
+  "integrity" "sha512-091oBExgENk/kGj3AZmtBDMpxQPDtxQABR2B9lb1JbVTs6ytdzZNwvhxQ4MWasRNEzlbEH8jCWFCwhF/Obj5AA=="
+  "resolved" "https://registry.npmmirror.com/@noble/curves/-/curves-1.1.0.tgz"
+  "version" "1.1.0"
+  dependencies:
+    "@noble/hashes" "1.3.1"
+
+"@noble/curves@1.1.0":
+  "integrity" "sha512-091oBExgENk/kGj3AZmtBDMpxQPDtxQABR2B9lb1JbVTs6ytdzZNwvhxQ4MWasRNEzlbEH8jCWFCwhF/Obj5AA=="
+  "resolved" "https://registry.npmmirror.com/@noble/curves/-/curves-1.1.0.tgz"
+  "version" "1.1.0"
+  dependencies:
+    "@noble/hashes" "1.3.1"
+
+"@noble/hashes@^1.1.5", "@noble/hashes@~1.3.0", "@noble/hashes@~1.3.1", "@noble/hashes@1.3.1":
   "integrity" "sha512-EbqwksQwz9xDRGfDST86whPBgM65E0OH/pCgqW0GBVzO22bNE+NuIbeTb714+IfSjU3aRk47EUvXIb5bTsenKA=="
   "resolved" "https://registry.npmmirror.com/@noble/hashes/-/hashes-1.3.1.tgz"
   "version" "1.3.1"
@@ -1741,6 +1765,28 @@
     "rc-motion" "^2.0.0"
     "rc-resize-observer" "^1.3.1"
     "rc-util" "^5.38.0"
+
+"@scure/base@~1.1.0":
+  "integrity" "sha512-Brj9FiG2W1MRQSTB212YVPRrcbjkv48FoZi/u4l/zds/ieRrqsh7aUf6CLwkAq61oKXr/ZlTzlY66gLIj3TFTQ=="
+  "resolved" "https://registry.npmmirror.com/@scure/base/-/base-1.1.5.tgz"
+  "version" "1.1.5"
+
+"@scure/bip32@1.3.1":
+  "integrity" "sha512-osvveYtyzdEVbt3OfwwXFr4P2iVBL5u1Q3q4ONBfDY/UpOuXmOlbgwc1xECEboY8wIays8Yt6onaWMUdUbfl0A=="
+  "resolved" "https://registry.npmmirror.com/@scure/bip32/-/bip32-1.3.1.tgz"
+  "version" "1.3.1"
+  dependencies:
+    "@noble/curves" "~1.1.0"
+    "@noble/hashes" "~1.3.1"
+    "@scure/base" "~1.1.0"
+
+"@scure/bip39@1.2.1":
+  "integrity" "sha512-Z3/Fsz1yr904dduJD0NpiyRHhRYHdcnyh73FZWiV+/qhWi83wNJ3NWolYqCEN+ZWsUz2TWwajJggcRE9r1zUYg=="
+  "resolved" "https://registry.npmmirror.com/@scure/bip39/-/bip39-1.2.1.tgz"
+  "version" "1.2.1"
+  dependencies:
+    "@noble/hashes" "~1.3.0"
+    "@scure/base" "~1.1.0"
 
 "@simplewebauthn/iso-webcrypto@^7.2.0":
   "integrity" "sha512-m8pts+mwPEcTIzBRRlEGTQyx6T2q+aQa6CljnW+VP/3MikKKeOkZEuLhe8bHnmsQNKLF8dtgQ2WyhHe39pzjpg=="
@@ -1920,6 +1966,13 @@
   "integrity" "sha512-Da66lEIFeIz9ltsdMZcpQvmrmmoqrfju8pm1BH8WbYjZSwUgCwXLb9C+9XYogwBITnbsSaMdVPb2ekf7TV+03w=="
   "resolved" "https://registry.npmmirror.com/@types/secp256k1/-/secp256k1-4.0.3.tgz"
   "version" "4.0.3"
+  dependencies:
+    "@types/node" "*"
+
+"@types/ws@8.5.3":
+  "integrity" "sha512-6YOoWjruKj1uLf3INHH7D3qTXwFfEsg1kf3c0uDdSBJwfa/llkwIjrAGV7j7mVgGNbzTQ3HiHKKDXl6bJPD97w=="
+  "resolved" "https://registry.npmmirror.com/@types/ws/-/ws-8.5.3.tgz"
+  "version" "8.5.3"
   dependencies:
     "@types/node" "*"
 
@@ -2151,6 +2204,11 @@
   "version" "0.10.5"
   dependencies:
     "@zag-js/dom-query" "0.10.5"
+
+"abitype@0.7.1":
+  "integrity" "sha512-VBkRHTDZf9Myaek/dO3yMmOzB/y2s3Zo6nVU7yaw1G+TvCHAjwaJzNGN9yo4K5D8bU/VZXKP1EJpRhFr862PlQ=="
+  "resolved" "https://registry.npmmirror.com/abitype/-/abitype-0.7.1.tgz"
+  "version" "0.7.1"
 
 "abort-controller@^3.0.0":
   "integrity" "sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg=="
@@ -2969,7 +3027,7 @@
     "path-type" "^4.0.0"
     "yaml" "^1.10.0"
 
-"crc-32@^1.2.0":
+"crc-32@^1.2.0", "crc-32@^1.2.2":
   "integrity" "sha512-ROmzCKrTnOwybPcJApAA6WBWij23HVfGVNKqqrZpuyZOHqK2CwHSvpGuyt/UNNvaIjEd8X5IFGp4Mh+Ie1IHJQ=="
   "resolved" "https://registry.npmmirror.com/crc-32/-/crc-32-1.2.2.tgz"
   "version" "1.2.2"
@@ -3017,6 +3075,13 @@
   "integrity" "sha512-cvA+JwZoU0Xq+h6WkMvAUqPEYy92Obet6UdKLfW60qn99ftItKjB5T+BkyWOFWe2pUyfQ+IJHmpOTznqk1M6Kg=="
   "resolved" "https://registry.npmmirror.com/cross-fetch/-/cross-fetch-3.1.8.tgz"
   "version" "3.1.8"
+  dependencies:
+    "node-fetch" "^2.6.12"
+
+"cross-fetch@^4.0.0":
+  "integrity" "sha512-e4a5N8lVvuLgAWgnCrLr2PP0YyDOTHa9H/Rj54dirp61qXnNq46m82bRhNqIA5VccJtWBvPTFRV3TtvHUKPB1g=="
+  "resolved" "https://registry.npmmirror.com/cross-fetch/-/cross-fetch-4.0.0.tgz"
+  "version" "4.0.0"
   dependencies:
     "node-fetch" "^2.6.12"
 
@@ -3232,6 +3297,16 @@
     "scrypt-js" "^3.0.0"
     "secp256k1" "^4.0.1"
     "setimmediate" "^1.0.5"
+
+"ethereum-cryptography@^2.0.0":
+  "integrity" "sha512-Z5Ba0T0ImZ8fqXrJbpHcbpAvIswRte2wGNR/KePnu8GbbvgJ47lMxT/ZZPG6i9Jaht4azPDop4HaM00J0J59ug=="
+  "resolved" "https://registry.npmmirror.com/ethereum-cryptography/-/ethereum-cryptography-2.1.2.tgz"
+  "version" "2.1.2"
+  dependencies:
+    "@noble/curves" "1.1.0"
+    "@noble/hashes" "1.3.1"
+    "@scure/bip32" "1.3.1"
+    "@scure/bip39" "1.2.1"
 
 "ethereumjs-abi@^0.6.8":
   "integrity" "sha512-Tx0r/iXI6r+lRsdvkFDlut0N08jWMnKRZ6Gkq+Nmw75lZe4e6o3EkSnkaBP5NF6+m5PTGAr9JP43N3LyeoglsA=="
@@ -3815,6 +3890,11 @@
   "integrity" "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw=="
   "resolved" "https://registry.npmmirror.com/isexe/-/isexe-2.0.0.tgz"
   "version" "2.0.0"
+
+"isomorphic-ws@^5.0.0":
+  "integrity" "sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw=="
+  "resolved" "https://registry.npmmirror.com/isomorphic-ws/-/isomorphic-ws-5.0.0.tgz"
+  "version" "5.0.0"
 
 "js-base64@^3.7.2":
   "integrity" "sha512-3MEt5DTINKqfScXKfJFrRbxkrnk2AxPWGBL/ycjz4dK8iqiSJ06UxD8jh8xuh6p10TX4t2+7FsBYVxxQbMg+qA=="
@@ -5415,7 +5495,7 @@
   dependencies:
     "is-typedarray" "^1.0.0"
 
-"typescript@^5.3.3":
+"typescript@^5.3.3", "typescript@>=4.9.4":
   "integrity" "sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw=="
   "resolved" "https://registry.npmmirror.com/typescript/-/typescript-5.3.3.tgz"
   "version" "5.3.3"
@@ -5459,7 +5539,7 @@
     "detect-node-es" "^1.1.0"
     "tslib" "^2.0.0"
 
-"utf-8-validate@^5.0.2", "utf-8-validate@^5.0.8":
+"utf-8-validate@^5.0.2", "utf-8-validate@^5.0.8", "utf-8-validate@>=5.0.2":
   "integrity" "sha512-Z6czzLq4u8fPOyx7TU6X3dvUZVvoJmxSQ+IcrlmagKhilxlhZgxPK6C5Jqbkw1IDUmFTM+cz9QDnnLTwDz/2gQ=="
   "resolved" "https://registry.npmmirror.com/utf-8-validate/-/utf-8-validate-5.0.10.tgz"
   "version" "5.0.10"
@@ -5471,7 +5551,7 @@
   "resolved" "https://registry.npmmirror.com/util-deprecate/-/util-deprecate-1.0.2.tgz"
   "version" "1.0.2"
 
-"util@^0.12.4":
+"util@^0.12.4", "util@^0.12.5":
   "integrity" "sha512-kZf/K6hEIrWHI6XqOFUiiMa+79wE/D8Q+NCNAWclkyg3b4d2k7s0QGepNjiABc+aR3N1PAyHL7p6UcLY6LmrnA=="
   "resolved" "https://registry.npmmirror.com/util/-/util-0.12.5.tgz"
   "version" "0.12.5"
@@ -5656,6 +5736,218 @@
   "resolved" "https://registry.npmmirror.com/web-streams-polyfill/-/web-streams-polyfill-4.0.0-beta.3.tgz"
   "version" "4.0.0-beta.3"
 
+"web3-core@^4.3.0", "web3-core@^4.3.2":
+  "integrity" "sha512-uIMVd/j4BgOnwfpY8ZT+QKubOyM4xohEhFZXz9xB8wimXWMMlYVlIK/TbfHqFolS9uOerdSGhsMbcK9lETae8g=="
+  "resolved" "https://registry.npmmirror.com/web3-core/-/web3-core-4.3.2.tgz"
+  "version" "4.3.2"
+  dependencies:
+    "web3-errors" "^1.1.4"
+    "web3-eth-accounts" "^4.1.0"
+    "web3-eth-iban" "^4.0.7"
+    "web3-providers-http" "^4.1.0"
+    "web3-providers-ws" "^4.0.7"
+    "web3-types" "^1.3.1"
+    "web3-utils" "^4.1.0"
+    "web3-validator" "^2.0.3"
+  optionalDependencies:
+    "web3-providers-ipc" "^4.0.7"
+
+"web3-errors@^1.1.3", "web3-errors@^1.1.4":
+  "integrity" "sha512-WahtszSqILez+83AxGecVroyZsMuuRT+KmQp4Si5P4Rnqbczno1k748PCrZTS1J4UCPmXMG2/Vt+0Bz2zwXkwQ=="
+  "resolved" "https://registry.npmmirror.com/web3-errors/-/web3-errors-1.1.4.tgz"
+  "version" "1.1.4"
+  dependencies:
+    "web3-types" "^1.3.1"
+
+"web3-eth-abi@^4.1.4":
+  "integrity" "sha512-YLOBVVxxxLYKXjaiwZjEWYEnkMmmrm0nswZsvzSsINy/UgbWbzfoiZU+zn4YNWIEhORhx1p37iS3u/dP6VyC2w=="
+  "resolved" "https://registry.npmmirror.com/web3-eth-abi/-/web3-eth-abi-4.1.4.tgz"
+  "version" "4.1.4"
+  dependencies:
+    "abitype" "0.7.1"
+    "web3-errors" "^1.1.3"
+    "web3-types" "^1.3.0"
+    "web3-utils" "^4.0.7"
+    "web3-validator" "^2.0.3"
+
+"web3-eth-accounts@^4.1.0":
+  "integrity" "sha512-UFtAsOANsvihTQ6SSvOKguupmQkResyR9M9JNuOxYpKh7+3W+sTnbLXw2UbOSYIsKlc1mpqqW9bVr1SjqHDpUQ=="
+  "resolved" "https://registry.npmmirror.com/web3-eth-accounts/-/web3-eth-accounts-4.1.0.tgz"
+  "version" "4.1.0"
+  dependencies:
+    "@ethereumjs/rlp" "^4.0.1"
+    "crc-32" "^1.2.2"
+    "ethereum-cryptography" "^2.0.0"
+    "web3-errors" "^1.1.3"
+    "web3-types" "^1.3.0"
+    "web3-utils" "^4.0.7"
+    "web3-validator" "^2.0.3"
+
+"web3-eth-contract@^4.1.2", "web3-eth-contract@^4.1.4":
+  "integrity" "sha512-tJ4z6QLgtu8EQu2sXnLA7g427oxmngnbAUh+9kJKbP6Yep/oe+z79PqJv7H3MwqwUNW9T+/FeB2PnSQSyxz6ig=="
+  "resolved" "https://registry.npmmirror.com/web3-eth-contract/-/web3-eth-contract-4.1.4.tgz"
+  "version" "4.1.4"
+  dependencies:
+    "web3-core" "^4.3.2"
+    "web3-errors" "^1.1.4"
+    "web3-eth" "^4.3.1"
+    "web3-eth-abi" "^4.1.4"
+    "web3-types" "^1.3.1"
+    "web3-utils" "^4.1.0"
+    "web3-validator" "^2.0.3"
+
+"web3-eth-ens@^4.0.8":
+  "integrity" "sha512-nj0JfeD45BbzVJcVYpUJnSo8iwDcY9CQ7CZhhIVVOFjvpMAPw0zEwjTvZEIQyCW61OoDG9xcBzwxe2tZoYhMRw=="
+  "resolved" "https://registry.npmmirror.com/web3-eth-ens/-/web3-eth-ens-4.0.8.tgz"
+  "version" "4.0.8"
+  dependencies:
+    "@adraffy/ens-normalize" "^1.8.8"
+    "web3-core" "^4.3.0"
+    "web3-errors" "^1.1.3"
+    "web3-eth" "^4.3.1"
+    "web3-eth-contract" "^4.1.2"
+    "web3-net" "^4.0.7"
+    "web3-types" "^1.3.0"
+    "web3-utils" "^4.0.7"
+    "web3-validator" "^2.0.3"
+
+"web3-eth-iban@^4.0.7":
+  "integrity" "sha512-8weKLa9KuKRzibC87vNLdkinpUE30gn0IGY027F8doeJdcPUfsa4IlBgNC4k4HLBembBB2CTU0Kr/HAOqMeYVQ=="
+  "resolved" "https://registry.npmmirror.com/web3-eth-iban/-/web3-eth-iban-4.0.7.tgz"
+  "version" "4.0.7"
+  dependencies:
+    "web3-errors" "^1.1.3"
+    "web3-types" "^1.3.0"
+    "web3-utils" "^4.0.7"
+    "web3-validator" "^2.0.3"
+
+"web3-eth-personal@^4.0.8":
+  "integrity" "sha512-sXeyLKJ7ddQdMxz1BZkAwImjqh7OmKxhXoBNF3isDmD4QDpMIwv/t237S3q4Z0sZQamPa/pHebJRWVuvP8jZdw=="
+  "resolved" "https://registry.npmmirror.com/web3-eth-personal/-/web3-eth-personal-4.0.8.tgz"
+  "version" "4.0.8"
+  dependencies:
+    "web3-core" "^4.3.0"
+    "web3-eth" "^4.3.1"
+    "web3-rpc-methods" "^1.1.3"
+    "web3-types" "^1.3.0"
+    "web3-utils" "^4.0.7"
+    "web3-validator" "^2.0.3"
+
+"web3-eth@^4.3.1":
+  "integrity" "sha512-zJir3GOXooHQT85JB8SrufE+Voo5TtXdjhf1D8IGXmxM8MrhI8AT+Pgt4siBTupJcu5hF17iGmTP/Nj2XnaibQ=="
+  "resolved" "https://registry.npmmirror.com/web3-eth/-/web3-eth-4.3.1.tgz"
+  "version" "4.3.1"
+  dependencies:
+    "setimmediate" "^1.0.5"
+    "web3-core" "^4.3.0"
+    "web3-errors" "^1.1.3"
+    "web3-eth-abi" "^4.1.4"
+    "web3-eth-accounts" "^4.1.0"
+    "web3-net" "^4.0.7"
+    "web3-providers-ws" "^4.0.7"
+    "web3-rpc-methods" "^1.1.3"
+    "web3-types" "^1.3.0"
+    "web3-utils" "^4.0.7"
+    "web3-validator" "^2.0.3"
+
+"web3-net@^4.0.7":
+  "integrity" "sha512-SzEaXFrBjY25iQGk5myaOfO9ZyfTwQEa4l4Ps4HDNVMibgZji3WPzpjq8zomVHMwi8bRp6VV7YS71eEsX7zLow=="
+  "resolved" "https://registry.npmmirror.com/web3-net/-/web3-net-4.0.7.tgz"
+  "version" "4.0.7"
+  dependencies:
+    "web3-core" "^4.3.0"
+    "web3-rpc-methods" "^1.1.3"
+    "web3-types" "^1.3.0"
+    "web3-utils" "^4.0.7"
+
+"web3-providers-http@^4.1.0":
+  "integrity" "sha512-6qRUGAhJfVQM41E5t+re5IHYmb5hSaLc02BE2MaRQsz2xKA6RjmHpOA5h/+ojJxEpI9NI2CrfDKOAgtJfoUJQg=="
+  "resolved" "https://registry.npmmirror.com/web3-providers-http/-/web3-providers-http-4.1.0.tgz"
+  "version" "4.1.0"
+  dependencies:
+    "cross-fetch" "^4.0.0"
+    "web3-errors" "^1.1.3"
+    "web3-types" "^1.3.0"
+    "web3-utils" "^4.0.7"
+
+"web3-providers-ipc@^4.0.7":
+  "integrity" "sha512-YbNqY4zUvIaK2MHr1lQFE53/8t/ejHtJchrWn9zVbFMGXlTsOAbNoIoZWROrg1v+hCBvT2c9z8xt7e/+uz5p1g=="
+  "resolved" "https://registry.npmmirror.com/web3-providers-ipc/-/web3-providers-ipc-4.0.7.tgz"
+  "version" "4.0.7"
+  dependencies:
+    "web3-errors" "^1.1.3"
+    "web3-types" "^1.3.0"
+    "web3-utils" "^4.0.7"
+
+"web3-providers-ws@^4.0.7":
+  "integrity" "sha512-n4Dal9/rQWjS7d6LjyEPM2R458V8blRm0eLJupDEJOOIBhGYlxw5/4FthZZ/cqB7y/sLVi7K09DdYx2MeRtU5w=="
+  "resolved" "https://registry.npmmirror.com/web3-providers-ws/-/web3-providers-ws-4.0.7.tgz"
+  "version" "4.0.7"
+  dependencies:
+    "@types/ws" "8.5.3"
+    "isomorphic-ws" "^5.0.0"
+    "web3-errors" "^1.1.3"
+    "web3-types" "^1.3.0"
+    "web3-utils" "^4.0.7"
+    "ws" "^8.8.1"
+
+"web3-rpc-methods@^1.1.3", "web3-rpc-methods@^1.1.4":
+  "integrity" "sha512-LTFNg4LFaeU8K9ecuT8fHDp/LOXyxCneeZjCrRYIW1u82Ly52SrY55FIzMIISGoG/iT5Wh7UiHOB3CQsWLBmbQ=="
+  "resolved" "https://registry.npmmirror.com/web3-rpc-methods/-/web3-rpc-methods-1.1.4.tgz"
+  "version" "1.1.4"
+  dependencies:
+    "web3-core" "^4.3.2"
+    "web3-types" "^1.3.1"
+    "web3-validator" "^2.0.3"
+
+"web3-types@^1.3.0", "web3-types@^1.3.1":
+  "integrity" "sha512-8fXi7h/t95VKRtgU4sxprLPZpsTh3jYDfSghshIDBgUD/OoGe5S+syP24SUzBZYllZ/L+hMr2gdp/0bGJa8pYQ=="
+  "resolved" "https://registry.npmmirror.com/web3-types/-/web3-types-1.3.1.tgz"
+  "version" "1.3.1"
+
+"web3-utils@^4.0.7", "web3-utils@^4.1.0":
+  "integrity" "sha512-+VJWR6FtCsgwuJr5tvSvQlSEG06586df8h2CxGc9tcNtIDyJKNkSDDWJkdNPvyDhhXFzQYFh8QOGymD1CIP6fw=="
+  "resolved" "https://registry.npmmirror.com/web3-utils/-/web3-utils-4.1.0.tgz"
+  "version" "4.1.0"
+  dependencies:
+    "ethereum-cryptography" "^2.0.0"
+    "web3-errors" "^1.1.4"
+    "web3-types" "^1.3.1"
+    "web3-validator" "^2.0.3"
+
+"web3-validator@^2.0.3":
+  "integrity" "sha512-fJbAQh+9LSNWy+l5Ze6HABreml8fra98o5+vS073T35jUcLbRZ0IOjF/ZPJhJNbJDt+jP1vseZsc3z3uX9mxxQ=="
+  "resolved" "https://registry.npmmirror.com/web3-validator/-/web3-validator-2.0.3.tgz"
+  "version" "2.0.3"
+  dependencies:
+    "ethereum-cryptography" "^2.0.0"
+    "util" "^0.12.5"
+    "web3-errors" "^1.1.3"
+    "web3-types" "^1.3.0"
+    "zod" "^3.21.4"
+
+"web3@^4.3.0":
+  "integrity" "sha512-YiLCsb5wmgJlSxRLzt7Z7H+CmlVVIKD8VaUQaZ+xKVG3Q7CpsO5Z6jmeKnlr6M9c6fDDsDnRM6G8g+nchZehbA=="
+  "resolved" "https://registry.npmmirror.com/web3/-/web3-4.3.0.tgz"
+  "version" "4.3.0"
+  dependencies:
+    "web3-core" "^4.3.2"
+    "web3-errors" "^1.1.4"
+    "web3-eth" "^4.3.1"
+    "web3-eth-abi" "^4.1.4"
+    "web3-eth-accounts" "^4.1.0"
+    "web3-eth-contract" "^4.1.4"
+    "web3-eth-ens" "^4.0.8"
+    "web3-eth-iban" "^4.0.7"
+    "web3-eth-personal" "^4.0.8"
+    "web3-net" "^4.0.7"
+    "web3-providers-http" "^4.1.0"
+    "web3-providers-ws" "^4.0.7"
+    "web3-rpc-methods" "^1.1.4"
+    "web3-types" "^1.3.1"
+    "web3-utils" "^4.1.0"
+    "web3-validator" "^2.0.3"
+
 "webcrypto-core@^1.7.7":
   "integrity" "sha512-7FjigXNsBfopEj+5DV2nhNpfic2vumtjjgPmeDKk45z+MJwXKKfhPB7118Pfzrmh4jqOMST6Ch37iPAHoImg5g=="
   "resolved" "https://registry.npmmirror.com/webcrypto-core/-/webcrypto-core-1.7.7.tgz"
@@ -5738,10 +6030,15 @@
   "resolved" "https://registry.npmmirror.com/wrappy/-/wrappy-1.0.2.tgz"
   "version" "1.0.2"
 
-"ws@^7.4.0", "ws@7.4.6":
+"ws@*", "ws@^7.4.0", "ws@7.4.6":
   "integrity" "sha512-YmhHDO4MzaDLB+M9ym/mDA5z0naX8j7SIlT8f8z+I0VtzsRbekxEutHSme7NPS2qE8StCYQNUnfWdXta/Yu85A=="
   "resolved" "https://registry.npmmirror.com/ws/-/ws-7.4.6.tgz"
   "version" "7.4.6"
+
+"ws@^8.8.1":
+  "integrity" "sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ=="
+  "resolved" "https://registry.npmmirror.com/ws/-/ws-8.16.0.tgz"
+  "version" "8.16.0"
 
 "ws@7.5.3":
   "integrity" "sha512-kQ/dHIzuLrS6Je9+uv81ueZomEwH0qVYstcAQ4/Z93K8zeko9gtAbttJWzoC5ukqXY1PpoouV3+VSOqEAFt5wg=="
@@ -5829,7 +6126,7 @@
     "compress-commons" "^4.1.0"
     "readable-stream" "^3.6.0"
 
-"zod@3.21.4":
+"zod@^3 >=3.19.1", "zod@^3.21.4", "zod@3.21.4":
   "integrity" "sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw=="
   "resolved" "https://registry.npmmirror.com/zod/-/zod-3.21.4.tgz"
   "version" "3.21.4"

@@ -59,6 +59,31 @@
             {
                 "indexed": true,
                 "internalType": "address",
+                "name": "checker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "checkTime",
+                "type": "uint256"
+            }
+        ],
+        "name": "CheckIn",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
                 "name": "participant",
                 "type": "address"
             },
@@ -113,6 +138,11 @@
                 "type": "address"
             },
             {
+                "internalType": "string",
+                "name": "activeName",
+                "type": "string"
+            },
+            {
                 "internalType": "uint256",
                 "name": "amount",
                 "type": "uint256"
@@ -157,9 +187,27 @@
     {
         "inputs": [
             {
+                "internalType": "uint256",
+                "name": "_activityId",
+                "type": "uint256"
+            }
+        ],
+        "name": "checkIn",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
                 "internalType": "address",
                 "name": "_tokenAddress",
                 "type": "address"
+            },
+            {
+                "internalType": "string",
+                "name": "_activeName",
+                "type": "string"
             },
             {
                 "internalType": "uint256",
@@ -189,6 +237,19 @@
     },
     {
         "inputs": [],
+        "name": "getActivityCount",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
         "name": "getActivityList",
         "outputs": [
             {
@@ -197,6 +258,11 @@
                         "internalType": "address",
                         "name": "tokenAddress",
                         "type": "address"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "activeName",
+                        "type": "string"
                     },
                     {
                         "internalType": "uint256",
@@ -222,6 +288,11 @@
                         "internalType": "bool",
                         "name": "closed",
                         "type": "bool"
+                    },
+                    {
+                        "internalType": "address[]",
+                        "name": "participants",
+                        "type": "address[]"
                     }
                 ],
                 "internalType": "struct ActivityManager.Activity[]",
@@ -230,6 +301,83 @@
             }
         ],
         "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getActivityListMe",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_activityId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getCheckIn",
+        "outputs": [
+            {
+                "internalType": "uint256[]",
+                "name": "",
+                "type": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_activityId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getParticipants",
+        "outputs": [
+            {
+                "internalType": "address[]",
+                "name": "",
+                "type": "address[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_activityId",
+                "type": "uint256"
+            }
+        ],
+        "name": "participate",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_activityId",
+                "type": "uint256"
+            }
+        ],
+        "name": "settle",
+        "outputs": [],
+        "stateMutability": "nonpayable",
         "type": "function"
     }
 ]

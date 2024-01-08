@@ -1,6 +1,9 @@
 import React from 'react';
 import { Button, Checkbox, Form, Input } from 'antd';
+import { DatePicker, Space } from 'antd';
+import dayjs from 'dayjs';
 
+const { RangePicker } = DatePicker;
 const onFinish = (values: any) => {
     console.log('Success:', values);
 };
@@ -15,20 +18,20 @@ type FieldType = {
     remember?: string;
 };
 
-const AddActivityForm: React.FC = () => (
+const AddActivityForm: React.FC = ({ formClick }) => (
     <Form
         name="basic"
         labelCol={{ span: 8 }}
         wrapperCol={{ span: 16 }}
         style={{ maxWidth: 600 }}
         initialValues={{ remember: true }}
-        onFinish={onFinish}
+        onFinish={(value) => formClick(value)}
         onFinishFailed={onFinishFailed}
         autoComplete="off"
     >
         <Form.Item<FieldType>
             label="活动名称"
-            name="username"
+            name="activityName"
             rules={[{ required: true, message: 'Please input your username!' }]}
         >
             <Input />
@@ -36,7 +39,7 @@ const AddActivityForm: React.FC = () => (
 
         <Form.Item<FieldType>
             label="参加人数"
-            name="password"
+            name="joinNumber"
             rules={[{ required: true, message: 'Please input your password!' }]}
         >
             <Input />
@@ -44,14 +47,17 @@ const AddActivityForm: React.FC = () => (
 
         <Form.Item<FieldType>
             label="持续时间"
-            name="password"
+            name="durationTime"
             rules={[{ required: true, message: 'Please input your password!' }]}
         >
-            <Input />
+            <RangePicker
+                defaultValue={[dayjs('2015/01/01', 'YYYY/MM/DD'), dayjs('2015/01/01', 'YYYY/MM/DD')]}
+                format={'YYYY/MM/DD'}
+            />
         </Form.Item>
         <Form.Item<FieldType>
-            label="参与金额"
-            name="password"
+            label="需要质押金额"
+            name="joinMoney"
             rules={[{ required: true, message: 'Please input your password!' }]}
         >
             <Input />
